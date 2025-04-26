@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="src/input.css" />
 </head>
+
 <body>
+
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="container">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        ☰
+      </button>
       
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinks">
+        <a href="#Home">Home.</a>
         <a href="#services">Services.</a>
+        <a href="#RecentWorks">Recent Works.</a>
         <a href="#contact">Contact.</a>
       </nav>
-     
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1 class="greeting">Hey, I am <span class="name">Milkessa</span></h1>
+    <h1 class="title">I am UI/UX <br />Designer.</h1>
+    <p class="description">
+      I break down complex user experience problems to<br />
+      provide ease of use and design visually appealing<br />
+      user interfaces.
+    </p>
+  </div>
+  <div class="hi">
+  
+    <h1>HI</h1>
+  </div>
+  <div class="glow-circle"></div>
+
+  
+  <div class="photo-glow"></div>
+    
+  </div>
+  <div class="profile-photo">
+    <img src="Assets/Images/PROFILE.png" alt="My Photo">
+  </div>
+  
+
   <script src="script.js"></script>
+  
 </body>
+
 </html>
