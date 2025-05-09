@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Portfolio</title>
   <link rel="stylesheet" href="src/input.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -12,47 +14,264 @@
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="container">
+    <div class="container" >
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         ☰
       </button>
       
       <nav class="nav-links" id="navLinks">
         <a href="#Home">Home.</a>
-        <a href="#services">Services.</a>
-        <a href="#RecentWorks">Recent Works.</a>
-        <a href="#contact">Contact.</a>
+        <a href="#servicesTitle">Services.</a>
+        <a href="#sec3">Recent Works.</a>
+        <a href="#sk">Skills.</a>
+        <a href="#last">Contact.</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <div class="hero">
-    <h1 class="greeting">Hey, I am <span class="name">Milkessa</span></h1>
+  <div class="hero" >
+    <h1 class="greeting"  >Hey, I am <span class="name" >Milkessa</span></h1>
     <h1 class="title">I am UI/UX <br />Designer.</h1>
-    <p class="description">
+    <p class="description" >
       I break down complex user experience problems to<br />
       provide ease of use and design visually appealing<br />
       user interfaces.
     </p>
   </div>
-  <div class="hi">
+  <div class="hi" >
   
     <h1>HI</h1>
   </div>
-  <div class="glow-circle"></div>
+  <div class="glow-circle" ></div>
 
   
-  <div class="photo-glow"></div>
+  <div class="photo-glow" ></div>
     
   </div>
-  <div class="profile-photo">
+  <div class="profile-photo" id="Home">
     <img src="Assets/Images/PROFILE.png" alt="My Photo">
   </div>
   
-
-  <script src="script.js"></script>
+  <a href="your-cv.pdf"  class="download-btn">
+    Download CV
+    <img src="Assets\icons\dow.png"  class="icon">
+  </a>
   
-</body>
+  <div class="social-buttons">
+   
+    <a href="https://github.com/milk-sa" target="_blank">
+      <img src="Assets\icons\linkedin.png" alt="linkedin" class="icon">
+    </a>
+    <a href="https://github.com/milk-sa" target="_blank">
+      <img src="Assets\icons\github.png" alt="GitHub" class="icon">
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank">
+      <img src="Assets\icons\Instagram.png" alt="Instagram" class="icon">
+    </a>
+  </div>
+  <div class="stats-section" id="servicesTitle">
+    <div class="stat-box">
+      <h2 >2+</h2>
+      <p>Years of<br>experience</p>
+    </div>
+    <div class="stat-box">
+      <h2 >10+</h2>
+      <p>Real world<br>projects</p>
+    </div>
+    <div class="stat-box">
+      <h2 >100+</h2>
+      <p>Happy<br>clients</p>
+    </div>
+  </div>
+  <section id="ervices">
+    <h2 class="sec-title" >My Services</h2>
+    
+</div>
+<div class="service-item">
+  <div class="service-title">
+    <img src="Assets\icons\pointer.png" alt="Icon" class="triangle-icon">
+    <h3>UI/UX Design</h3>
+  </div>
+  <p class="service-description">
+    Crafting user-centered designs that offer seamless interaction, intuitive navigation, and a visually engaging experience across digital platforms.
+  </p>
+  
 
-</html>
+  
+</div>
+<div class="service-item1">
+  <div class="service-title">
+    <img src="Assets\icons\pointer.png" alt="Icon" class="triangle-icon">
+    <h3>Web Design&nbsp;&nbsp;</h3>
+  </div>
+  <p class="service-description">
+    Designing responsive and modern websites that blend aesthetics with functionality to ensure an impactful online presence.
+  </p>
+</div>
+<div class="service-item2">
+  <div class="service-title">
+    <img src="Assets\icons\pointer.png" alt="Icon" class="triangle-icon">
+    <h3>App Design&nbsp;&nbsp;</h3>
+  </div>
+  <p class="service-description">
+    Creating clean, user-friendly mobile app interfaces focused on usability, accessibility, and brand consistency.
+  </p>
+</div>
+<div class="service-item3">
+  <div class="service-title">
+    <img src="Assets\icons\pointer.png" alt="Icon" class="triangle-icon">
+    <h3>Wireframing<br> & Prototyping</h3>
+  </div>
+  <p class="service-description">
+    Building structured layouts and interactive prototypes to visualize and test user flows before development begins.
+  </p>
+</div>
+<section class = "Recent-works">
+  <h1 class = "Title-Recent" x>My Recent works</h1>
+
+
+
+
+
+<div class="container0" id = "sec3">
+  <div class="projects-grid">
+      <!-- QuickBuy Project -->
+      <div class="project-card">
+          <div class="project-image">
+              <img src="Assets\Images\quickbuy.png">
+          </div>
+          <h2 class="project-title">QuickBuy</h2>
+          <p class="project-description">A simplistic and modern e-commerce website</p>
+      </div>
+
+      <!-- DiscoverEthiopia Project -->
+      <div class="project-card" >
+          <div class="project-image">
+              <img src="Assets\Images\discoverETH.png">
+          </div>
+          <h2 class="project-title">DiscoverEthiopia</h2>
+          <p class="project-description">A website where Ethiopian photographers collab to represent the country.</p>
+      </div>
+
+      <!-- Unibuddy Project -->
+      <div class="project-card">
+          <div class="project-image">
+              <img src="Assets\Images\unibuddy.png">
+          </div>
+          <h2 class="project-title">Unibuddy</h2>
+          <p class="project-description">A mobile app that help university students cope with academic life.</p>
+      </div>
+
+      <!-- Fitness Project -->
+      <div class="project-card">
+          <div class="project-image">
+              <img src="Assets\Images\fitness.png">
+          </div>
+          <h2 class="project-title">Fitness</h2>
+          <p class="project-description">A mobile app that helps people to track their workout routine</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class="skills-container">
+    <h1 class="sec4" id="sk">My skills</h1>
+      <!-- Figma Skill -->
+      <div class="skill-row">
+          <div class="skill-icon figma-icon">
+              <img src="Assets\icons\figma.png">
+          </div>
+          <div class="skill-bar-container">
+              <div class="skill-bar" style="width: 92%;">
+                  <span class="skill-percentage">92%</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Silver Icon Skill -->
+      <div class="skill-row">
+          <div class="skill-icon silver-icon">
+              <img src="Assets\icons\framer.png">
+          </div>
+          <div class="skill-bar-container">
+              <div class="skill-bar" style="width: 77%;">
+                  <span class="skill-percentage">77%</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Gradient Circle Skill -->
+      <div class="skill-row">
+          <div class="skill-icon gradient-circle">
+            <img src="Assets\icons\spline.png">
+          </div>
+          <div class="skill-bar-container">
+              <div class="skill-bar" style="width: 60%;">
+                  <span class="skill-percentage">60%</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Diamond Skill -->
+      <div class="skill-row">
+          <div class="skill-icon diamond-icon">
+            <img src="Assets\icons\sketch.png">
+          </div>
+          <div class="skill-bar-container">
+              <div class="skill-bar" style="width: 30%;">
+                  <span class="skill-percentage">30%</span>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+    <div class="container1">
+      <h1 class="sec5" id="last">Contact me</h1>
+      
+      <form>
+          <div class="input-row">
+              <input type="text" placeholder="Full name">
+              <input type="tel" placeholder="phone number">
+          </div>
+          
+          <input type="email" placeholder="Your email address">
+          
+          <textarea placeholder="Your message..."></textarea>
+          
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</section>
+
+
+
+
+
+
+<div class="footer-content">
+  <p class="social-heading">Social Media</p>
+  
+  <div class="social-icons">
+      <a href="#" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="social-icon">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="social-icon">
+          <i class="fab fa-instagram"></i>
+      </a>
+  </div>
+  
+  <p class="name2">Milkessa Girma.</p>
+  <p class="copyright">© 2023. All Rights Reserved</p>
+</div>
+
+
+  
+  
