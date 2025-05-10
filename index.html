@@ -53,20 +53,22 @@
     <img src="Assets/Images/PROFILE.png" alt="My Photo">
   </div>
   
-  <a href="your-cv.pdf"  class="download-btn">
+  <a href="https://drive.google.com/file/d/1gQD3covbxOTcomdXWlIzp0_nuEHbN0y2/view?usp=sharing"  class="download-btn">
     Download CV
     <img src="Assets\icons\dow.png"  class="icon">
   </a>
   
   <div class="social-buttons">
    
-    <a href="https://github.com/milk-sa" target="_blank">
+    <a href="https://www.linkedin.com/in/milkessa-girma-17b133281/
+    " target="_blank">
       <img src="Assets\icons\linkedin.png" alt="linkedin" class="icon">
     </a>
     <a href="https://github.com/milk-sa" target="_blank">
       <img src="Assets\icons\github.png" alt="GitHub" class="icon">
     </a>
-    <a href="https://instagram.com/yourusername" target="_blank">
+    <a href="https://www.instagram.com/mlkchillz/
+    " target="_blank">
       <img src="Assets\icons\Instagram.png" alt="Instagram" class="icon">
     </a>
   </div>
@@ -139,7 +141,7 @@
       <!-- QuickBuy Project -->
       <div class="project-card">
           <div class="project-image">
-              <img src="Assets\Images\quickbuy.png">
+             <a href="https://www.figma.com/design/nmRmRkXB4MDRRIiyP0TcNy/My-Works?node-id=788-243&t=P2s5GTayr7dG49zl-1"><img src="Assets\Images\quickbuy.png"></a>
           </div>
           <h2 class="project-title">QuickBuy</h2>
           <p class="project-description">A simplistic and modern e-commerce website</p>
@@ -148,7 +150,7 @@
       <!-- DiscoverEthiopia Project -->
       <div class="project-card" >
           <div class="project-image">
-              <img src="Assets\Images\discoverETH.png">
+              <a href="https://www.figma.com/design/nmRmRkXB4MDRRIiyP0TcNy/My-Works?node-id=317-2&t=P2s5GTayr7dG49zl-1"><img src="Assets\Images\discoverETH.png"></a>
           </div>
           <h2 class="project-title">DiscoverEthiopia</h2>
           <p class="project-description">A website where Ethiopian photographers collab to represent the country.</p>
@@ -157,7 +159,7 @@
       <!-- Unibuddy Project -->
       <div class="project-card">
           <div class="project-image">
-              <img src="Assets\Images\unibuddy.png">
+              <a href="https://www.figma.com/design/VyA8qbEuf04nGYdOBNtx3m/Final-Project?node-id=14-167&t=pQfEnQONFCoAGykk-1"><img src="Assets\Images\unibuddy.png"></a>
           </div>
           <h2 class="project-title">Unibuddy</h2>
           <p class="project-description">A mobile app that help university students cope with academic life.</p>
@@ -166,7 +168,7 @@
       <!-- Fitness Project -->
       <div class="project-card">
           <div class="project-image">
-              <img src="Assets\Images\fitness.png">
+              <a href="https://www.figma.com/design/nmRmRkXB4MDRRIiyP0TcNy/My-Works?node-id=390-29&t=P2s5GTayr7dG49zl-1"><img src="Assets\Images\fitness.png"></a>
           </div>
           <h2 class="project-title">Fitness</h2>
           <p class="project-description">A mobile app that helps people to track their workout routine</p>
@@ -233,15 +235,15 @@
     <div class="container1">
       <h1 class="sec5" id="last">Contact me</h1>
       
-      <form>
+      <form id="contactForm">
           <div class="input-row">
-              <input type="text" placeholder="Full name">
-              <input type="tel" placeholder="phone number">
+              <input type="text" name="name"placeholder="Full name">
+              <input type="tel" name="phone" placeholder="phone number">
           </div>
           
-          <input type="email" placeholder="Your email address">
+          <input type="email" name="email" placeholder="Your email address">
           
-          <textarea placeholder="Your message..."></textarea>
+          <textarea name = "message"placeholder="Your message..."></textarea>
           
           <button type="submit">Submit</button>
       </form>
@@ -257,13 +259,13 @@
   <p class="social-heading">Social Media</p>
   
   <div class="social-icons">
-      <a href="#" class="social-icon">
+      <a href="https://www.linkedin.com/in/milkessa-girma-17b133281" class="social-icon">
           <i class="fab fa-linkedin-in"></i>
       </a>
-      <a href="#" class="social-icon">
+      <a href="https://github.com/milk-sa" class="social-icon">
           <i class="fab fa-github"></i>
       </a>
-      <a href="#" class="social-icon">
+      <a href="https://www.instagram.com/mlkchillz/" class="social-icon">
           <i class="fab fa-instagram"></i>
       </a>
   </div>
@@ -272,6 +274,41 @@
   <p class="copyright">© 2023. All Rights Reserved</p>
 </div>
 
+
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzP4B6TRpxq2FFcEcv7IewTetX6VH5ZQJdVvH3FLKC6cJ0zMtHNOC0AQncDIP7jrrt7/exec";
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = {
+      name: form.name.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    fetch(scriptURL, {
+      method: "POST",
+      mode: "no-cors", // Needed to avoid CORS error from Apps Script
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(() => {
+      alert("Message sent successfully!");
+      form.reset();
+    })
+    .catch((error) => {
+      alert("Error sending message");
+      console.error(error);
+    });
+  });
+</script>
+
+</body>
+</html>
 
   
   
